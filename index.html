@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="flex">
+            <!-- card container -->
+           <div class="grid grid-cols-1 gap-6 m-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="card card-compact bg-base-100 w-64 border-[1px] border-gray-300 h-[350px]">
+                <figure class=" mt-4">
+                  <img
+                    src="images/triangle.png"
+                    alt="Shoes"
+                    class="w-40" />
+                </figure>
+                <div class="card-body text-center">
+                  <h2 class="card-title block">Triangle</h2>
+                  <p class="text-xl">Area(A) = .5 x b x h</p>
+                  <div class="flex gap-2">
+                    <input type="text" id="triangle-base" class="w-20 px-2 bg-gray-200" placeholder="b">
+                  <span>cm</span>
+                  <input type="text" id="triangle-height" class="w-20 px-2 bg-gray-200" placeholder="h">
+                  <span>cm</span>
+                  </div>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary w-full" id="triangle-btn">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card card-compact bg-base-100 w-64 h-[350px] border-[1px] border-gray-300">
+                <figure class=" mt-4">
+                  <img
+                    src="images/rectangle.png"
+                    alt="Shoes"
+                    class="w-52" />
+                </figure>
+                <div class="card-body text-center block space-y-4">
+                  <h2 class="card-title block">Rectangle</h2>
+                  <p class="text-xl">Area(A) =w x l</p>
+                  <div class="flex gap-2">
+                    <input type="text" id="rectangle-width" class="w-20 px-2 bg-gray-200" placeholder="w">
+                  <span>cm</span>
+                  <input type="text" id="rectangle-length" class="w-20 px-2 bg-gray-200" placeholder="l">
+                  <span>cm</span>
+                  </div>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary w-full" id="rectangle-btn">Calculate</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card card-compact bg-base-100 w-64 h-[350px] border-[1px] border-gray-300">
+                <figure class=" mt-4">
+                  <img
+                    src="images/parallelogram.png"
+                    alt="Shoes"
+                    class="w-52 " />
+                </figure>
+                <div class="card-body text-center block space-y-4">
+                  <h2 class="card-title block">Parallelogram</h2>
+                  <p class="text-xl">Area(A) =b x h</p>
+                  <div class="flex gap-2">
+                    <input type="text" class="w-20 px-2 bg-gray-200" placeholder="b" id="parallelogram-base">
+                  <span>cm</span>
+                  <input type="text" class="w-20 px-2 bg-gray-200" placeholder="h" id="parallelogram-height">
+                  <span>cm</span>
+                  </div>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary w-full" id="parallelogram-btn">Calculate</button>
+                  </div>
+                </div>
+              </div>
+         
+           </div>
+            <div class="border-[1px] border-gray-300 h-96 flex-1 mt-6 m-9 rounded-lg">
+                    <h1 class="font-semibold text-center m-3"><u>Area Calculation</u></h1>
+                    <div class="flex p-4">
+                    <p id="result">0</p><span> cm<sup>2</sup></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script/geometry-calculator.js"></script>
+</body>
+</html>
